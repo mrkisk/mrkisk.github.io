@@ -52,3 +52,63 @@ img {
     border-radius: 10px;
     margin-bottom: 20px;
 }
+
+.video-wrapper {
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+    overflow: hidden;
+    max-width: 100%;
+    background: #000;
+}
+
+.video-wrapper iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.toc {
+    list-style-type: none;
+    padding: 0;
+}
+
+.toc > li {
+    margin: 10px 0;
+}
+
+.toc > li > a {
+    text-decoration: none;
+    color: #007bff;
+    transition: color 0.3s;
+    font-weight: bold;
+}
+
+.toc > li > a:hover {
+    color: #0056b3;
+}
+
+.toc > li > ul {
+    list-style-type: none;
+    padding-left: 20px;
+}
+
+.toc > li > ul > li {
+    margin: 5px 0;
+}
+
+.toc > li > ul > li > a {
+    text-decoration: none;
+    color: #007bff;
+    transition: color 0.3s;
+}
+
+.toc > li > ul > li > a:hover {
+    color: #0056b3;
+}
+
+.twitter-wrapper {
+    margin: 0 auto;
+}
