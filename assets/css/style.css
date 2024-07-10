@@ -11,6 +11,12 @@ body {
     padding: 20px;
 }
 
+.container_sub {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
 .section {
     background-color: white;
     border-radius: 10px;
@@ -45,6 +51,11 @@ h3 {
 
 .link:hover {
     background-color: #0056b3;
+}
+
+strong {
+    font-size: 1.5em;
+    font-weight: bold;
 }
 
 img {
