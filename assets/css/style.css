@@ -62,7 +62,7 @@ header nav ul li a:hover {
     padding: 20px;
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 1000px) {
     .sub-section-wrapper {
         display: flex;
         flex-wrap: wrap;
@@ -80,23 +80,23 @@ header nav ul li a:hover {
     align-items: center;
     margin-bottom: 40px;
     flex-wrap: wrap;
-    flex-direction: column; /* デフォルトは縦に並べる */
+    flex-direction: column;
 }
 
 .profile-image {
-    max-width: 400px; /* 最大幅を設定 */
+    max-width: 360px; /* 最大幅を設定 */
     max-height: auto; /* 最大高さを設定 */
     border-radius: 50%;
-    margin: 60px;
+    margin: 40px;
 }
 
 .profile-details {
-    max-width: 560px;
     width: 100%;
+    max-width: 560px;
 }
 
 .profile-details h2 {
-    margin: 0;
+    margin-bottom: 0;
 }
 
 .profile-details h3 {
@@ -117,18 +117,9 @@ header nav ul li a:hover {
     font-size: 16px;
 }
 
-@media (min-width: 1180px) {
+@media (min-width: 1055px) {
     .profile {
         flex-direction: row; /* 横に並べる */
-    }
-
-    .profile-image {
-        margin: 60px 20px 60px 60px; /* 横に並べる際のマージン調整 */
-    }
-
-    .profile-details {
-        width: auto; /* 横に並べる際の幅調整 */
-        margin: 60px 60px 60px 20px; /* 横に並べる際のマージン調整 */
     }
 }
 
