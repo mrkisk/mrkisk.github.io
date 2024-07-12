@@ -3,18 +3,111 @@ body {
     margin: 0;
     padding: 0;
     background-color: #f0f0f0;
+    font-size: 18px;
+    color: #333;
+}
+
+header {
+    position: fixed;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 24px 50px;
+    z-index: 1;
+    background-color: #ffffff;
+    color: rgba(0, 0, 0, 0.8);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+}
+
+header .logo a {
+    font-size: 1.3em;
+    font-weight: bold;
+    color: rgba(0, 0, 0, 0.8);
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+header .logo a:hover,
+header .logo a:active {
+    color: #007bff;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+header nav ul li {
+    margin-left: 50px;
+}
+
+header nav ul li a {
+    color: rgba(0, 0, 0, 0.8);
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+header nav ul li a:hover {
+    color: #007bff;
 }
 
 .container {
-    max-width: 1300px;
+    max-width: 1350px;
     margin: 0 auto;
     padding: 20px;
 }
 
 .container_sub {
-    max-width: 800px;
+    max-width: 900px;
     margin: 0 auto;
     padding: 20px;
+}
+
+.profile {
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+    flex-wrap: wrap;
+}
+
+.profile-image {
+    width: 100%;
+    max-width: 450px; /* 最大幅を設定 */
+    max-height: 450px; /* 最大高さを設定 */
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+.profile-details {
+    /* max-width: 1300px; */
+}
+
+.profile-details h2 {
+    margin: 0;
+}
+
+.profile-details p {
+    margin: 5px 0;
+}
+
+.profile-details .button {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.profile-details .button:hover {
+    background-color: #0056b3;
 }
 
 .section {
@@ -28,17 +121,32 @@ body {
 h1 {
     font-size: 38.4px;
     text-align: center;
+    color: #000;
 }
 
 h2 {
     font-size: 28.8px;
     border-bottom: 2px solid #007bff;
     padding-bottom: 5px;
+    color: #111;
 }
 
 h3 {
     font-size: 22.464px;
     color: #007bff;
+}
+
+.profile-details h3{
+    font-size: 20px;
+    margin: 0 0 20px 0;
+    font-weight: bold;
+    color: #222;
+}
+
+h4 {
+    font-size: 20px;
+    font-weight: bold;
+    color: #333;
 }
 
 .link {
@@ -54,11 +162,6 @@ h3 {
 
 .link:hover {
     background-color: #0056b3;
-}
-
-strong {
-    font-size: 1.5em;
-    font-weight: bold;
 }
 
 img {
