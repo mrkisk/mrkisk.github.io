@@ -113,13 +113,14 @@ header nav ul li a:hover {
     background-color: white;
     border-radius: 10px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    margin-bottom: 20px;
+    margin: 20px 0;
     padding: 20px;
 }
 
 h1 {
     font-size: 45px;
     text-align: center;
+    margin: 50px 0 10px 0;
     color: #000;
 }
 
@@ -249,4 +250,34 @@ img {
         flex: 1 1 calc(50% - 20px);
         box-sizing: border-box;
     }
+}
+
+.contact-info ul {
+    text-align: center;
+    list-style: none;
+    padding: 0;
+}
+
+.contact-info ul li {
+    margin: 10px 0;
+}
+
+.contact-info a {
+    color: rgba(0, 0, 0, 0.8);
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 18px;
+    transition: color 0.3s;
+}
+
+.contact-info a:hover {
+    color: #007bff;
+}
+
+footer {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #ffffff; /* ヘッダーと同じ背景色 */
+    color: rgba(0, 0, 0, 0.8); /* ヘッダーと同じテキスト色 */
+    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
 }
