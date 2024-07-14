@@ -66,7 +66,7 @@ header nav ul li a:hover {
     max-width: 400px;
     height: auto;
     border-radius: 50%;
-    margin: 40px;
+    margin: 20px;
 }
 .profile-details h2 {
     margin-bottom: 0;
@@ -121,34 +121,6 @@ header nav ul li a:hover {
     color: gold;
 }
 
-@media (min-width: 1000px) {
-    .profile {
-        flex-direction: row;
-        align-items: flex-start;
-        text-align: left;
-    }
-    
-    .profile-image-container, .profile-details {
-        flex: 1;
-    }
-    
-    .profile-image-container {
-        display: flex;
-        justify-content: center;
-    }
-    
-    .sub-section-wrapper {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 20px;
-    }
-
-    .sub-section-wrapper > .section {
-        flex: 1 1 calc(50% - 20px);
-        box-sizing: border-box;
-    }
-}
-
 .section {
     background-color: white;
     border-radius: 10px;
@@ -160,27 +132,34 @@ header nav ul li a:hover {
 h1 {
     font-size: 45px;
     text-align: center;
-    margin: 50px 0 10px 0;
+    margin: 120px 0 10px 0;
     color: #000;
 }
-
+h1:first-of-type {
+    margin-top: 40px;
+}
 h2 {
     font-size: 33px;
     border-bottom: 2px solid #007bff;
     padding-bottom: 5px;
     color: #111;
 }
-
 h3 {
     font-size: 24px;
     margin: 10px;
     color: #007bff;
 }
-
-h4 {
-    font-size: 21px;
+.profile-details h4 {
+    font-size: 22px;
     font-weight: bold;
     color: #333;
+}
+
+.no-under-line {
+    text-decoration: none;
+}
+.no-under-line:hover {
+    text-decoration: underline;
 }
 
 .link {
@@ -203,17 +182,28 @@ h4 {
 
 img {
     max-width: 100%;
+    margin: 0 auto;
     border-radius: 10px;
     margin-bottom: 20px;
 }
 
+.sub-media {
+    max-width: 80%;
+}
+
 .video-wrapper {
+    margin: 0 auto;
     position: relative;
-    padding-bottom: 56.25%;
-    height: 0;
     overflow: hidden;
     max-width: 100%;
+    width: 80%;
     background: #000;
+}
+
+.video-wrapper::before {
+    content: "";
+    display: block;
+    padding-top: 56.25%;
 }
 
 .video-wrapper iframe {
@@ -307,4 +297,32 @@ footer {
     background-color: #ffffff;
     color: rgba(0, 0, 0, 0.8);
     box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+}
+
+@media (min-width: 1000px) {
+    .profile {
+        flex-direction: row;
+        align-items: flex-start;
+        text-align: left;
+    }
+    
+    .profile-image-container, .profile-details {
+        flex: 1;
+    }
+    
+    .profile-image-container {
+        display: flex;
+        justify-content: center;
+    }
+    
+    .sub-section-wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    .sub-section-wrapper > .section {
+        flex: 1 1 calc(50% - 20px);
+        box-sizing: border-box;
+    }
 }
