@@ -4,7 +4,7 @@ body {
     padding: 0;
     background-color: #f0f0f0;
     font-size: 18px;
-    color: #333;
+    color: #444;
 }
 
 header {
@@ -78,7 +78,7 @@ header nav ul li a:hover {
     color: #222;
 }
 .profile-details h4 {
-    font-size: 19px;
+    font-size: 20px;
     margin: 20px 0 0 0;
     font-weight: bold;
     color: #333;
@@ -122,6 +122,8 @@ header nav ul li a:hover {
 }
 
 .section {
+    display: flex;
+    flex-direction: column;
     background-color: white;
     border-radius: 10px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
@@ -149,10 +151,21 @@ h3 {
     margin: 10px;
     color: #007bff;
 }
-.profile-details h4 {
+h4 {
     font-size: 22px;
     font-weight: bold;
     color: #333;
+    margin: 15px 0 0 0;
+}
+h5 {
+    font-size: 30px;
+    font-weight: bold;
+    color: #222;
+    text-align: center;
+    margin: 60px 0 30px 0;
+}
+h5:first-of-type {
+    margin-top: 30px;
 }
 
 .no-under-line {
@@ -164,6 +177,7 @@ h3 {
 
 .link {
     display: inline-block;
+    align-self: flex-start;
     margin: 10px 0;
     padding: 10px 20px;
     background-color: #007bff;
@@ -180,7 +194,27 @@ h3 {
     background-color: #0056b3;
 }
 
+.link-big {
+    display: inline-block;
+    align-self: flex-start;
+    margin: 10px auto;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 1.5;
+    transition: background-color 0.3s;
+}
+
+.link-big:hover {
+    background-color: #0056b3;
+}
+
 img {
+    display: block;
     width: 100%;
     margin: 0 auto;
     border-radius: 10px;
@@ -188,7 +222,7 @@ img {
 }
 
 .sub-media {
-    max-width: 80%;
+    width: 80%;
 }
 
 .video-wrapper {
