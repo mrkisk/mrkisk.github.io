@@ -181,7 +181,7 @@ h3 {
 }
 
 img {
-    max-width: 100%;
+    width: 100%;
     margin: 0 auto;
     border-radius: 10px;
     margin-bottom: 20px;
