@@ -20,7 +20,6 @@ header {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     box-sizing: border-box;
 }
-
 header .logo a {
     font-size: 1.3em;
     font-weight: bold;
@@ -28,51 +27,32 @@ header .logo a {
     text-decoration: none;
     transition: color 0.3s;
 }
-
-header .logo a:hover,
-header .logo a:active {
+header .logo a:hover, header .logo a:active {
     color: #007bff;
 }
-
 header nav ul {
     list-style: none;
     display: flex;
     margin: 0;
     padding: 0;
 }
-
 header nav ul li {
     margin-left: 50px;
 }
-
 header nav ul li a {
     color: rgba(0, 0, 0, 0.8);
     text-decoration: none;
     font-weight: bold;
     transition: color 0.3s;
 }
-
 header nav ul li a:hover {
     color: #007bff;
 }
 
 .container {
-    max-width: 1350px;
+    max-width: 1200px;
     margin: 0 auto;
     padding: 20px;
-}
-
-@media (min-width: 1000px) {
-    .sub-section-wrapper {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 20px;
-    }
-
-    .sub-section-wrapper > .section {
-        flex: 1 1 calc(50% - 20px);
-        box-sizing: border-box;
-    }
 }
 
 .profile {
@@ -82,34 +62,63 @@ header nav ul li a:hover {
     text-align: center;
     flex-wrap: wrap;
 }
-
 .profile-image {
     max-width: 400px;
     height: auto;
     border-radius: 50%;
     margin: 40px;
 }
-
 .profile-details h2 {
     margin-bottom: 0;
 }
-
 .profile-details h3 {
     font-size: 22px;
     margin: 0 0 20px 0;
     font-weight: normal;
     color: #222;
 }
-
 .profile-details h4 {
     font-size: 19px;
     margin: 20px 0 0 0;
     font-weight: bold;
     color: #333;
 }
-
 .profile-details .link {
     font-size: 16px;
+}
+
+.skills {
+    display: inline-flex;
+    flex-direction: column;
+}
+.skill {
+    display: flex;
+    margin-top: 5px;
+}
+.skill-name {
+    width: 100px;
+    text-align: left;
+    margin-right: 10px;
+}
+.stars {
+    position: relative;
+    font-size: 20px;
+    line-height: 20px;
+}
+.stars::before {
+    content: '☆☆☆☆☆';
+    color: #ccc;
+}
+.stars span {
+    position: absolute;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    white-space: nowrap;
+}
+.stars span::before {
+    content: '★★★★★';
+    color: gold;
 }
 
 @media (min-width: 1000px) {
@@ -126,6 +135,17 @@ header nav ul li a:hover {
     .profile-image-container {
         display: flex;
         justify-content: center;
+    }
+    
+    .sub-section-wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    .sub-section-wrapper > .section {
+        flex: 1 1 calc(50% - 20px);
+        box-sizing: border-box;
     }
 }
 
