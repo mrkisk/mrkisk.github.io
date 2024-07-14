@@ -3,40 +3,37 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Media Centering Example</title>
+    <title>Twitter Video Centering Example</title>
     <style>
-        .section {
-            background-color: white;
-            border-radius: 10px;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-            margin: 20px 0;
-            padding: 20px;
-            text-align: left; /* デフォルトでテキストを左揃えに */
+        .twitter-wrapper {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            box-sizing: border-box;
         }
 
-        .center-media {
-            display: block;
-            margin: 0 auto;
-            max-width: 80%; /* 画像の最大幅を80%に設定 */
-            height: auto; /* アスペクト比を維持 */
+        .twitter-wrapper blockquote {
+            margin: 0 !important;
+            box-sizing: border-box;
+        }
+
+        .twitter-tweet {
+            width: 100% !important;
+            max-width: 100% !important;
+            box-sizing: border-box;
         }
     </style>
 </head>
 <body>
-    <div class="section">
-        <h3><a href="./pages/tag-climber.html" class="no-under-line">タッグクライマー【協力型アスレチック】</a></h3>
-        <img src="./assets/images/tag-climber/thumbnail.jpg" alt="Thumbnail" class="center-media">
-        <h4>概要:</h4>
-        <p>
-            <a href="https://www.contest.cluster.mu/gamejam2022spring-home" target="_blank">ClusterGAMEJAM 2022 in SPRING</a> アスレチック部門大賞受賞作品<br>
-            タッグクライマーは、Cluster上で遊べる協力型アスレチックゲームです。<br>
-            ジャンプ力が低い「クライマー」とジャンプ力が高い「ヘルパー」で協力してゴールを目指します。<br>
-            クライマーが登れないところは、「パワーアーム」を使ってヘルパーがクライマーを引っ張り上げることができます。
-        </p>
-        <h4>制作:</h4>
-        <p>逆路 直樹、mrkisk（私）</p>
-        <a class="link" href="./pages/tag-climber.html">Read More</a><br>
-        <a class="link" href="https://cluster.mu/w/b3f3032e-5bf7-4002-b8b2-b1927e8117c3" target="_blank">Play on Cluster</a>
+    <div class="twitter-wrapper">
+        <blockquote class="twitter-tweet"data-media-max-width="800">
+            <p lang="ja" dir="ltr">「アスレチック部門大賞」はチーム「ぐだぐだぶとん」さんの「タッグクライマー」です！おめでとうございます！🎉
+                <a href="https://twitter.com/hashtag/ClusterGAMEJAM?src=hash&amp;ref_src=twsrc%5Etfw">#ClusterGAMEJAM</a>
+                <a href="https://t.co/idiDdALV38">https://t.co/idiDdALV38</a>
+                <a href="https://t.co/izR5JshKuF">pic.twitter.com/izR5JshKuF</a>
+            </p>&mdash; cluster公式∞ (@cluster_jp) <a href="https://twitter.com/cluster_jp/status/1507697448088604681?ref_src=twsrc%5Etfw">March 26, 2022</a>
+        </blockquote>
+        <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
     </div>
-</body>
 </html>
+
