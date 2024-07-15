@@ -233,6 +233,10 @@ img {
     background: #000;
 }
 
+.video-wrapper.sub {
+    width: 70%;
+}
+
 .video-wrapper::before {
     content: "";
     display: block;
